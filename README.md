@@ -2,6 +2,19 @@
 
 A registry of agents implementing the [Agent Client Protocol (ACP)](https://github.com/anthropics/agent-client-protocol).
 
+> **Note**: This registry only includes agents that support authentication. Agents must implement auth flows to be listed here.
+
+## Included Agents
+
+| Agent                                                             | Description                                                        |
+|-------------------------------------------------------------------|--------------------------------------------------------------------|
+| [Auggie CLI](https://github.com/augmentcode/auggie-zed-extension) | Augment Code's software agent with industry-leading context engine |
+| [Codex CLI](https://github.com/zed-industries/codex-acp)          | OpenAI's coding assistant                                          |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli)         | Google's official CLI for Gemini                                   |
+| [Mistral Vibe](https://github.com/mistralai/mistral-vibe)         | Mistral's open-source coding assistant                             |
+| [OpenCode](https://github.com/sst/opencode)                       | The open source coding agent                                       |
+| [Qwen Code](https://github.com/QwenLM/qwen-code)                  | Alibaba's Qwen coding assistant                                    |
+
 ## Usage
 
 Fetch the registry index:
@@ -56,11 +69,11 @@ https://github.com/agentclientprotocol/registry/releases/latest/download/<agent-
 
 ## Distribution Types
 
-| Type | Description | Command |
-|------|-------------|---------|
+| Type     | Description                   | Command                |
+|----------|-------------------------------|------------------------|
 | `binary` | Platform-specific executables | Download, extract, run |
-| `npx` | npm packages | `npx <package> [args]` |
-| `uvx` | PyPI packages via uv | `uvx <package> [args]` |
+| `npx`    | npm packages                  | `npx <package> [args]` |
+| `uvx`    | PyPI packages via uv          | `uvx <package> [args]` |
 
 ## Icons
 

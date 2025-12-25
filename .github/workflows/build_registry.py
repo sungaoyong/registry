@@ -16,7 +16,7 @@ except ImportError:
     HAS_JSONSCHEMA = False
 
 REGISTRY_VERSION = "1.0.0"
-SKIP_DIRS = {".claude", ".git", ".github", ".idea", "__pycache__", "dist"}
+SKIP_DIRS = {".claude", ".git", ".github", ".idea", "__pycache__", "dist", "_not_yet_unsupported", ".sandbox"}
 REQUIRED_FIELDS = {"id", "name", "version", "description", "distribution"}
 VALID_DISTRIBUTION_TYPES = {"binary", "npx", "uvx"}
 VALID_PLATFORMS = {
