@@ -498,9 +498,9 @@ def process_entry(
     if icon_path.exists():
         icon_errors = validate_icon(icon_path)
         if icon_errors:
-            print(f"Warning: {entry_dir.name}/icon.svg:")
-            for error in icon_errors:
-                print(f"  - {error}")
+            return None, [f"{entry_dir.name}/icon.svg validation failed:"] + [
+                f"  - {e}" for e in icon_errors
+            ]
         entry["icon"] = f"{base_url}/{entry_id}.svg"
 
     return entry, []
